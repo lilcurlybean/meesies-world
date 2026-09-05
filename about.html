@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>About</title>
+
+    <style>
+@font-face {
+    font-family: Bremlin;
+    src: url('fonts/BremlinRegular-z8Yma.otf') format('opentype');
+}
+
+    
+
+body {
+    background-image: url('images/paper background.jpe');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    </style>
+</head>
+<body>
+<header>
+
+    <div class="nav-box">
+    
+ <a href="index.html">
+            <img src="images/Meesie_s_World_logo-removebg-preview.png" class="logo" alt="Meesie's World Logo">
+        </a>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="work.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+
+        
+    </nav>
+    </div>
+     
+</header>
+
+<div class="WelcomeToAbout-Text">
+    <h1>MEET LAMEEZE JULIUS</h1>
+</div>
+
+<img src="images/polaroid curly.png" alt="Polaroid Curly" class="polaroid-curly">
+<img src="images/swirl arrow-Photoroom.png" alt="Swirl Arrow" class="swirl-arrow">
+
+<!--Touch typewriter and paper pops out-->
+<div class="typewriter-container" onclick="togglePaper()">
+<img src="images/typewriter.png" alt="typewriter" class="typewriter-image">
+
+<div class="paper" id="paper">
+    <p>I am currently studying Mobile Application and Web Development, it's <br>
+        my first year at college and I plan to pursue my Bachelor’s next year. 
+        I’ve always been interested in tech, design and creating visuals, so I enjoy <br>
+        having a mix of both in what I do. I would say I'm a graphic designer but I <br>
+        use the term "Digital designer". Web development is my current thing at the moment, 
+        I am kind of all over the place ♡.
+</p>
+
+</div>
+</div>
+<div class="tip-container" id="tip">
+<h3 class="tip"> Tap Me!</h3>
+</div>
+
+<a href="work.html">
+     <img src="images/my project title pink-Photoroom (1).png" alt="My Project Title" class="my-project-title">
+    <img src="images/pink file-Photoroom.png" alt="Pink File" class="pink-file">
+</a>
+
+<div class="music-button">
+
+    <img src="images/cd2-Photoroom.png" 
+         alt="Music player"
+         onclick="toggleMusic()"
+         id="music-image">
+
+    <audio id="music">
+        <source src="music/PinkPantheress - Girl Like Me (Instrumental).mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<h2 class="beep">Beep Me!</h2>
+<a href="contact.html">
+    <img src="images/pinkRetroPhone-Photoroom.png" class="pink-phone">
+</a>
+
+<!-- Footer -->
+<div class="footer">
+    <p>♡ Made with love by Meesie ♡</p>
+    <p>&copy; 2026 Meesie's World · All rights reserved.</p>
+</div>
+
+
+</body>
+</html>

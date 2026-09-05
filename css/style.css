@@ -1,0 +1,548 @@
+.pink-box {
+   background-color: #F8DDE3;
+
+padding: 30px;
+margin: 70px auto;
+
+width: 100%;
+max-width: 700px;
+
+text-align: center;
+
+border-radius: 20px;
+box-sizing: border-box;
+    
+}
+
+.pink-box h2 {
+font-family: Bremlin, sans-serif;
+font-size: 45px;
+color: #D66F86;
+}
+
+.pink-box p {
+font-family: Bremlin, sans-serif;
+font-size: 22px;
+color: #D66F86;
+}
+
+.logo {
+    
+    height: auto;
+    top: 0%;
+    left: 20px;
+    width: 250px;
+}
+
+nav {
+  display: flex;
+align-items: center;
+gap: 25px;
+   
+}
+
+nav a {
+  text-decoration: none;
+    color: #8B5E68;
+    font-family: Bremlin, sans-serif; 
+    font-size: 20px;
+padding: 10px 15px;
+}
+
+nav a {
+    color: #D66F86;
+}
+
+.nav-box {
+    width: 100%;
+max-width: 1100px;
+height: 120px;
+margin: 25px auto;
+padding: 10px 25px;
+
+background-color: #F8DDE3;
+border-radius: 20px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+box-sizing: border-box;
+
+}
+
+.welcome-heading {
+    text-align: center;
+    font-family: Bremlin, sans-serif;
+    font-size: 30px;
+    color: #c34c66;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+
+.meesMatchaDate {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    left: -50px;
+    top: 0;
+    border-radius: 20px;
+   
+}
+.matcha-container {
+    display: flex;
+}
+.container-p {
+        position: relative;
+     text-align: center;
+     right: 200px;
+    font-family: 'Bremlin', sans-serif;
+    font-size: 25px;
+    color: #D66F86;
+top: 100px;
+   
+}
+.gtk-btn {
+    position: relative;
+    right: -600px;
+    margin-top: -10000px;
+    margin-bottom: 500px;
+    margin-left: 80px;
+    width: 350px;
+}
+.telephone {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+    left: -300px;
+    top: -40px;
+
+      animation: phoneRing 2s ease-in-out infinite;
+}
+
+@keyframes phoneRing {
+    0%, 70%, 100% {
+        transform: rotate(0deg);
+    }
+
+    72% {
+        transform: rotate(-8deg);
+    }
+
+    76% {
+        transform: rotate(8deg);
+    }
+
+    80% {
+        transform: rotate(-8deg);
+    }
+
+    84% {
+        transform: rotate(8deg);
+    }
+
+    88% {
+        transform: rotate(0deg);
+    }
+}
+
+.Hello-pic {
+    width: 500px;
+    margin-top: -400px;
+    
+    left: -3000px;
+
+animation: typewriterFloat 3s ease-in-out infinite;
+
+}
+@keyframes typewriterFloat {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-10px) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(-10px) rotate(3deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    
+}
+
+
+
+
+
+/*About page*/
+.WelcomeToAbout-Text {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.WelcomeToAbout-Text h1 {
+    font-family: Bremlin, sans-serif;
+    font-size: 50px;
+    color: #D66F86;
+}
+.polaroid-curly {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    max-width: 20%;
+    height: auto;
+    top: 0%;
+    left: -300px;
+   
+}
+.swirl-arrow {
+    position: absolute;
+    display: block;
+    width: 300px;
+    height: auto;
+
+    top: 300px;
+    left: 500px;
+
+    transform: translateX(150px) rotate(150deg);
+    z-index: 9999;
+
+   animation: floatArrow 2s ease-in-out infinite;
+}
+/* Animation for the arrow floating effect */
+@keyframes floatArrow {
+    0% {
+        transform: rotate(150deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(150deg) translateY(-15px);
+    }
+
+    100% {
+        transform: rotate(150deg) translateY(0);
+    }
+}
+
+/* Typewriter and Paper */
+.typewriter-container {
+    position: relative;
+    width: 600px;
+    height: 700px;
+    margin: 50px auto 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.typewriter-image {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+.paper {
+    position: absolute;
+
+    width: 72%;
+    height: 900px;
+
+    left: 14%;
+    top: 5%;
+
+    background: #fcfcfc;
+
+    padding: 25px;
+    box-sizing: border-box;
+
+    z-index: 1;
+/*Start the paper down inside the typewriter*/
+    transform: translateY(900px);
+
+    transition: transform 1.5s ease-in-out;
+}
+/* When the paper is "out", move it up to be visible */
+.paper.out {
+    transform: translateY(0);
+}
+/* Style the text inside the paper */
+.paper p {
+    font-family: Bremlin, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
+}
+.tip-container {
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 600px;
+    font-size: 30px;
+}
+.tip {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: bold;
+    color: #c34c66;
+    
+    
+}
+
+
+.pink-file {
+    position: relative;
+    display: block;
+    margin: -210px auto 10px;
+    max-width: 25%;
+    height: auto;
+    top: 0%;
+    left: -300px;
+     transform: translateX(-10px) rotate(-10deg);
+    z-index: 9999;
+}
+
+.my-project-title {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    max-width: 40%;
+    height: auto;
+    top: 0%;
+    left: -300px;
+}
+
+.pink-phone {
+   position: relative;
+    display: block;
+    margin-top: -500px;
+    margin-bottom: 500px;
+    max-width: 25%;
+    height: auto;
+    top: 50%;
+    left: 850px;
+     transform: translateX(10px) rotate(10deg);
+    z-index: 9999; 
+}
+
+.beep {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #D66F86;
+    margin-top: -710px;
+    margin-bottom: 500px;
+    margin-left: 950px;
+
+
+}
+
+.footer {
+   background-color: #F8DDE3;
+    color: #D66F86;
+    text-align: center;
+    padding: 25px;
+    margin-top: 80px;
+    font-family: Bremlin, sans-serif;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Work page */
+.projects-heading {
+    text-align: center;
+    font-family: Bremlin, sans-serif;
+    font-size: 50px;
+    color: #D66F86;
+    margin-top: 50px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    width: 80%;
+    max-width: 900px;
+    margin: 100px auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 20px;
+    
+    box-shadow: 0 5px 15px rgba(139, 94, 104, 0.2);
+
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Carousel */
+
+.carousel {
+    width: 900px;
+    max-width: 90%;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-window {
+    width: 750px;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 5px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    width: 200px;
+    height: 300px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+    padding: 0;
+    display: block;   
+}
+
+.carousel-btn {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #F8DDE3;
+    color: #D66F86;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+#music-image {
+    width: 200px;
+    cursor: pointer;
+    margin-left: 550px;
+}
+
+#music-image.playing {
+    animation: spinCD 3s linear infinite;
+}
+
+@keyframes spinCD {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.music-frame {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 110px;
+    height: 110px;
+    border: none;
+    z-index: 9999;
+}
+
+<!--Contactpage-->
+
+.contact {
+    text-align: center;
+    margin: 100px auto;
+    width: 100%;
+}
+
+.contact h1 {
+    font-family: Bremlin, sans-serif;
+    font-size: 50px;
+    color: #D66F86;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.contact h2 {
+    font-family: Bremlin, sans-serif;
+    font-size: 28px;
+    color: #D66F86;
+    text-align: center;
+}
+
+.contact p {
+    font-family: Bremlin, sans-serif;
+    font-size: 20px;
+    color: #8B5E68;
+    text-align: center;
+}
+.socials {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.socials h1 {
+    font-family: Bremlin, sans-serif;
+    font-size: 50px;
+    color: #D66F86;
+    margin-bottom: 30px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.social-button {
+    
+    background-color: #F8DDE3;
+    color: #D66F86;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Bremlin, sans-serif;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+}
+
+
+.banner {
+    width: 100%;
+    height: 400px;
+    margin-bottom: -90px;
+}
+

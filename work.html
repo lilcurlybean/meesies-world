@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>My Projects</title>
+
+    <style>
+@font-face {
+    font-family: Bremlin;
+    src: url('fonts/BremlinRegular-z8Yma.otf') format('opentype');
+}
+
+    
+
+body {
+    background-image: url('images/paper background.jpe');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+    </style>
+</head>
+<body>
+<header>
+
+    <div class="nav-box">
+    
+ <a href="index.html">
+            <img src="images/Meesie_s_World_logo-removebg-preview.png" class="logo" alt="Meesie's World Logo">
+        </a>
+    <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="work.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+
+        
+    </nav>
+    </div>
+     
+</header>
+
+<h1 class="projects-heading">My Projects!</h1>
+
+<div class="image-grid">
+
+    <img src="images/The Art Of Loving.png" alt="The Art Of Loving">
+    <img src="images/pocket.png" alt="Pocket full of love">
+    <img src="images/starry night.png" alt="Starry Night">
+    <img src="images/birthday girl.png" alt="mini Lameeze">
+    <img src="images/curly girl.jpg" alt="curly girl">
+    <img src="images/meesie uchis.png" alt="Meesie Uchis">
+</div>
+
+
+<!-- Carousel -->
+
+<div class="carousel">
+
+    <button class="carousel-btn" onclick="moveSlide(-1)">‹</button>
+
+    <div class="carousel-window">
+        <div class="carousel-track">
+
+            <img src="images/CarouselMaker_IG_Splitter_plvxz/CarouselMaker_ImageSplitter_1.1.png" alt="Carousel Image 1">
+
+            <img src="images/CarouselMaker_IG_Splitter_plvxz/CarouselMaker_ImageSplitter_1.2.png" alt="Carousel Image 2">
+
+            <img src="images/CarouselMaker_IG_Splitter_plvxz/CarouselMaker_ImageSplitter_1.3.png" alt="Carousel Image 3">
+
+            <img src="images/CarouselMaker_IG_Splitter_c5liir/CarouselMaker_ImageSplitter_4.png" alt="Carousel Image 4">
+
+            <img src="images/CarouselMaker_IG_Splitter_c5liir/CarouselMaker_ImageSplitter_5.png" alt="Carousel Image 5">
+
+            <img src="images/CarouselMaker_IG_Splitter_c5liir/CarouselMaker_ImageSplitter_6.png" alt="Carousel Image 6">
+
+            
+        </div>
+    </div>
+
+    <button class="carousel-btn" onclick="moveSlide(1)">›</button>
+
+</div>
+
+<div class="music-button">
+
+    <img src="images/cd2-Photoroom.png" 
+         alt="Music player"
+         onclick="toggleMusic()"
+         id="music-image">
+
+    <audio id="music">
+        <source src="music/PinkPantheress - Girl Like Me (Instrumental).mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>♡ Made with love by Meesie ♡</p>
+    <p>&copy; 2026 Meesie's World · All rights reserved.</p>
+</div>
+
+</body>
+</html>

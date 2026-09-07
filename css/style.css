@@ -654,12 +654,12 @@ animation: typewriterFloat 3s ease-in-out infinite;
     /* ABOUT */
 
     .WelcomeToAbout-Text {
-        margin: 25px auto;
-        padding: 8px;
+        margin: 15px auto;
+        padding: 5px;
     }
 
     .WelcomeToAbout-Text h1 {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .polaroid-curly {

@@ -665,6 +665,11 @@ animation: typewriterFloat 3s ease-in-out infinite;
     .polaroid-curly {
         max-width: 50%;
         margin-left: 30%;
+    margin: 0 auto;
+    max-width: 20%;
+    height: auto;
+    top: 0%;
+    left: -300px;
 
     }
 

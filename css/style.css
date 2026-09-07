@@ -546,54 +546,68 @@ animation: typewriterFloat 3s ease-in-out infinite;
     margin-bottom: -90px;
 }
 
-/* =========================
-   MOBILE - SMALLER VERSION
-   ========================= */
-
 @media (max-width: 768px) {
 
     body {
         overflow-x: hidden;
-        zoom: 0.80;
     }
 
+    /* MAKE EVERYTHING SMALLER */
     .nav-box {
-        width: 95%;
-        height: 120px;
+        width: 85%;
+        height: 55px;
+        padding: 3px 8px;
+        margin: 12px auto;
     }
 
     .logo {
-        width: 250px;
+        width: 85px;
     }
 
     nav {
-        gap: 25px;
+        gap: 0;
     }
 
     nav a {
-        font-size: 20px;
-        padding: 10px 15px;
+        font-size: 8px;
+        padding: 3px 4px;
     }
 
+
+    /* PINK BOX */
+
     .pink-box {
-        width: 100%;
-        max-width: 700px;
-        padding: 30px;
-        margin: 70px auto;
+        width: 70%;
+        padding: 10px;
+        margin: 25px auto;
+        border-radius: 12px;
     }
 
     .pink-box h2 {
-        font-size: 45px;
+        font-size: 20px;
     }
 
     .pink-box p {
-        font-size: 22px;
+        font-size: 12px;
     }
 
+
+    /* WELCOME */
+
     .welcome-heading {
-        font-size: 30px;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    /* MATCHA */
+
+    .matcha-container {
+        transform: scale(0.55);
+        transform-origin: top center;
+        width: 180%;
+        margin-left: -40%;
     }
 
     .meesMatchaDate {
@@ -601,38 +615,170 @@ animation: typewriterFloat 3s ease-in-out infinite;
     }
 
     .container-p {
-        font-size: 25px;
+        font-size: 18px;
     }
+
+
+    /* BUTTON */
 
     .gtk-btn {
-        width: 350px;
+        width: 170px;
+        transform: scale(0.7);
     }
+
+
+    /* PHONE */
 
     .telephone {
-        width: 300px;
+        width: 130px;
     }
+
+
+    /* HELLO */
 
     .Hello-pic {
-        width: 500px;
-    }
-
-    #music-image {
         width: 200px;
     }
 
+
+    /* MUSIC */
+
+    #music-image {
+        width: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+    /* ABOUT */
+
+    .WelcomeToAbout-Text {
+        margin: 25px auto;
+        padding: 8px;
+    }
+
     .WelcomeToAbout-Text h1 {
-        font-size: 50px;
+        font-size: 25px;
+    }
+
+    .polaroid-curly {
+        max-width: 20%;
+    }
+
+    .swirl-arrow {
+        width: 100px;
+    }
+
+
+    /* TYPEWRITER */
+
+    .typewriter-container {
+        width: 80%;
+        height: 400px;
+        transform: scale(0.7);
+        transform-origin: top center;
+        margin-left: 10%;
+    }
+
+    .paper p {
+        font-size: 12px;
+    }
+
+
+    /* PROJECTS */
+
+    .my-project-title {
+        max-width: 30%;
+    }
+
+    .pink-file {
+        max-width: 20%;
+    }
+
+    .pink-phone {
+        max-width: 20%;
+    }
+
+    .beep {
+        font-size: 18px;
     }
 
     .projects-heading {
-        font-size: 50px;
+        font-size: 25px;
+    }
+
+    .image-grid {
+        width: 85%;
+        gap: 7px;
+    }
+
+    .image-grid img {
+        height: 120px;
+    }
+
+
+    /* CAROUSEL */
+
+    .carousel {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .carousel-window {
+        width: 75%;
+    }
+
+    .carousel-track img {
+        width: 80px;
+        height: 120px;
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+
+    /* CONTACT */
+
+    .contact {
+        width: 85%;
+        margin: 50px auto;
     }
 
     .contact h1,
     .socials h1 {
-        font-size: 50px;
+        font-size: 25px;
     }
+
+    .contact h2 {
+        font-size: 17px;
+    }
+
+    .contact p {
+        font-size: 13px;
+    }
+
+    .socials {
+        margin: 50px auto;
+    }
+
+    .social-buttons {
+        gap: 8px;
+    }
+
+    .social-button {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+
+    /* FOOTER */
+
     .footer {
-        font-size:14px;
+        font-size: 9px;
+        padding: 12px;
     }
-    }
+}

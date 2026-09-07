@@ -546,242 +546,185 @@ animation: typewriterFloat 3s ease-in-out infinite;
     margin-bottom: -90px;
 }
 
-/*PHONE / MOBILE*/
+/* =========================
+   PHONE / MOBILE
+   ========================= */
 
 @media (max-width: 768px) {
 
     body {
-        width: 100%;
         overflow-x: hidden;
     }
 
     /* NAVIGATION */
     .nav-box {
-        width: 94%;
-        height: auto;
-        min-height: 100px;
-        margin: 15px auto;
-        padding: 10px;
-        flex-direction: column;
-        justify-content: center;
-        gap: 5px;
+        width: 95%;
+        height: 85px;
+        padding: 5px 10px;
     }
 
     .logo {
-        width: 150px;
-        margin: 0 auto;
+        width: 140px;
     }
 
     nav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 3px;
+        gap: 2px;
     }
 
     nav a {
-        font-size: 13px;
-        padding: 6px 5px;
-        margin: 0;
+        font-size: 11px;
+        padding: 5px;
     }
 
 
-    /* GENERAL HEADINGS */
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 25px;
-    }
-
-
-    /*HOME PAGE*/
+    /* HOME */
 
     .pink-box {
-        width: 90%;
+        width: 80%;
+        max-width: 450px;
         padding: 20px;
-        margin: 35px auto;
+        margin: 40px auto;
     }
 
     .pink-box h2 {
-        font-size: 35px;
-        margin: 5px;
+        font-size: 32px;
     }
 
     .pink-box p {
-        font-size: 20px;
-        margin: 5px;
+        font-size: 18px;
     }
 
     .welcome-heading {
-        font-size: 20px;
-        margin: 50px 20px 40px;
-        line-height: 1.4;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
+
+    /* PHOTO + TEXT
+       Keep them beside each other */
+
     .matcha-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
+        width: 650px;
+        transform: scale(0.65);
+        transform-origin: top center;
+        margin-left: -95px;
     }
 
     .meesMatchaDate {
-        width: 75%;
-        max-width: 300px;
-        left: 0;
-        margin: 10px auto;
+        width: 300px;
+        left: -30px;
     }
 
     .container-p {
-        position: static;
-        width: 85%;
-        margin: 20px auto;
-        top: 0;
-        right: auto;
         font-size: 18px;
-        line-height: 1.5;
-        text-align: center;
+        right: 150px;
+        top: 80px;
     }
 
-    .container-p br {
-        display: none;
-    }
+
+    /* GET TO KNOW ME */
 
     .gtk-btn {
-        position: static;
-        display: block;
-        width: 70%;
-        max-width: 300px;
-        margin: 30px auto;
+        width: 230px;
+        right: -220px;
+        margin-top: -350px;
+        margin-bottom: 300px;
     }
+
+
+    /* TELEPHONE */
 
     .telephone {
-        position: static;
-        width: 55%;
-        max-width: 250px;
-        margin: 20px auto;
+        width: 190px;
+        left: -130px;
     }
+
+
+    /* HELLO */
 
     .Hello-pic {
-        display: block;
-        position: static;
-        width: 70%;
-        max-width: 350px;
-        margin: 30px auto;
+        width: 300px;
+        margin-top: -250px;
+        left: 0;
     }
+
+
+    /* MUSIC */
 
     #music-image {
-        width: 90px;
-        margin: 20px auto;
-        display: block;
+        width: 100px;
+        margin-left: 250px;
     }
 
 
-    /* ABOUT PAGE*/
-
-    .WelcomeToAbout-Text {
-        margin: 30px auto;
-        padding: 10px;
-    }
+    /* =========================
+       ABOUT
+       ========================= */
 
     .WelcomeToAbout-Text h1 {
-        font-size: 32px;
-        line-height: 1.2;
+        font-size: 35px;
     }
 
     .polaroid-curly {
-        max-width: 60%;
-        left: 0;
-        margin: 20px auto;
+        max-width: 30%;
+        left: -100px;
     }
 
     .swirl-arrow {
-        position: static;
-        width: 150px;
-        margin: 10px auto;
-        transform: rotate(150deg);
+        width: 180px;
+        left: 180px;
+        top: 250px;
     }
 
     .typewriter-container {
-        width: 90%;
-        max-width: 500px;
-        height: 500px;
-        margin: 30px auto;
-    }
-
-    .paper {
-        width: 75%;
-        height: 400px;
-        left: 12.5%;
-        padding: 15px;
-    }
-
-    .paper p {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-
-    .tip-container {
-        height: auto;
-        margin: 20px auto;
-        text-align: center;
-        font-size: 20px;
+        width: 500px;
+        height: 600px;
+        transform: scale(0.65);
+        transform-origin: top center;
+        margin-left: -60px;
     }
 
     .my-project-title {
-        max-width: 70%;
-        left: 0;
-        margin: 30px auto;
+        max-width: 35%;
+        left: -100px;
     }
 
     .pink-file {
-        max-width: 50%;
-        left: 0;
-        margin: -50px auto 30px;
+        max-width: 25%;
+        left: -100px;
+    }
+
+    .pink-phone {
+        max-width: 25%;
+        left: 250px;
     }
 
     .beep {
         font-size: 30px;
-        margin: 30px auto 10px;
-        text-align: center;
-    }
-
-    .pink-phone {
-        max-width: 45%;
-        position: static;
-        margin: 10px auto 50px;
-        transform: rotate(10deg);
+        margin-left: 280px;
     }
 
 
-    /*PROJECTS PAGE*/
+    /* =========================
+       PROJECTS
+       ========================= */
 
     .projects-heading {
         font-size: 35px;
-        margin-top: 40px;
     }
 
     .image-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
         width: 90%;
-        margin: 40px auto;
+        gap: 10px;
     }
 
     .image-grid img {
-        width: 100%;
-        height: 200px;
-        object-fit: contain;
+        height: 180px;
     }
 
     .carousel {
         width: 95%;
-        max-width: 100%;
-        margin: 50px auto;
-        gap: 5px;
     }
 
     .carousel-window {
@@ -789,73 +732,34 @@ animation: typewriterFloat 3s ease-in-out infinite;
     }
 
     .carousel-track img {
-        width: 130px;
-        height: 200px;
-    }
-
-    .carousel-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 25px;
+        width: 120px;
+        height: 180px;
     }
 
 
-    /*CONTACT PAGE*/
-
-    .contact {
-        width: 90%;
-        margin: 60px auto;
-    }
+    /* =========================
+       CONTACT
+       ========================= */
 
     .contact h1,
     .socials h1 {
         font-size: 35px;
     }
 
-    .contact h1 {
-        margin-top: 50px;
-    }
-
-    .contact h2 {
-        font-size: 24px;
-    }
-
-    .contact p {
-        font-size: 17px;
-        word-break: break-word;
-    }
-
-    .socials {
-        width: 90%;
-        margin: 50px auto;
-    }
-
     .social-buttons {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-
-    .social-button {
-        width: 70%;
-        max-width: 250px;
-        text-align: center;
+        gap: 20px;
     }
 
     .banner {
-        width: 100%;
         height: auto;
-        margin-bottom: 0;
     }
 
 
-    /*FOOTER*/
+    /* FOOTER */
 
     .footer {
         width: 100%;
         box-sizing: border-box;
         font-size: 11px;
-        padding: 18px 10px;
-        margin-top: 50px;
     }
 }

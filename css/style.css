@@ -546,7 +546,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
     margin-bottom: -90px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     body {
         overflow-x: hidden;

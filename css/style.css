@@ -791,3 +791,10 @@ animation: typewriterFloat 3s ease-in-out infinite;
         padding: 12px;
     }
 }
+
+@media (max-width: 992px) {
+    #col1, #col2, #col3 {
+        width: 46%;
+        margin: 2%;
+    }
+}

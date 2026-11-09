@@ -114,6 +114,7 @@ top: 100px;
     margin-bottom: 500px;
     margin-left: 80px;
     width: 350px;
+    transform: translateY(25px);
 }
 .telephone {
     position: relative;
@@ -156,12 +157,22 @@ top: 100px;
 .Hello-pic {
     width: 500px;
     margin-top: -400px;
-    
     left: -3000px;
 
 animation: typewriterFloat 3s ease-in-out infinite;
 
 }
+
+.home-page .Hello-pic-mobile {
+    display: none;
+}
+
+.home-page .Hello-pic-desktop {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @keyframes typewriterFloat {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -812,8 +823,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
         overflow-x: hidden;
     }
 
-    .home-page .nav-box,
-    .about-page .nav-box {
+    .nav-box {
         width: calc(100% - 24px);
         height: auto;
         min-height: 55px;
@@ -823,20 +833,17 @@ animation: typewriterFloat 3s ease-in-out infinite;
         padding: 8px;
     }
 
-    .home-page .logo,
-    .about-page .logo {
+    .nav-box .logo {
         width: 90px;
     }
 
-    .home-page nav,
-    .about-page nav {
+    .nav-box nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 2px;
     }
 
-    .home-page nav a,
-    .about-page nav a {
+    .nav-box nav a {
         font-size: 12px;
         padding: 5px 4px;
     }
@@ -904,6 +911,14 @@ animation: typewriterFloat 3s ease-in-out infinite;
     .home-page .hello-phone-row .Hello-pic {
         width: min(54vw, 240px);
         margin: 0;
+    }
+
+    .home-page .Hello-pic-mobile {
+        display: block;
+    }
+
+    .home-page .Hello-pic-desktop {
+        display: none;
     }
 
     .home-page .telephone-container {

@@ -577,6 +577,18 @@ animation: typewriterFloat 3s ease-in-out infinite;
     margin-left: 550px;
 }
 
+.work-page .music-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.work-page #music-image {
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
 #music-image.playing {
     animation: spinCD 3s linear infinite;
 }
@@ -661,6 +673,19 @@ animation: typewriterFloat 3s ease-in-out infinite;
     font-size: 50px;
     color: #D66F86;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.socials .music-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.socials #music-image {
+    display: block;
+    margin: 0 auto;
 }
 
 .social-buttons {
@@ -702,6 +727,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
   max-width:1100px;
   margin:0 auto;
   padding:20px 20px 90px;
+  text-align: center;
 }
 
 .projects h2{
@@ -709,6 +735,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
   font-size:clamp(1.9rem,4vw,2.8rem);
   margin:0 0 8px;
   color:var(--pink);
+  text-align:center;
 }
 
 /* the grid of boxes */
@@ -717,6 +744,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));  /* 3 across on desktop, fewer on small screens */
   gap:26px;
   margin-top:28px;
+  justify-items:center;
 }
 
 /* each box */
@@ -730,6 +758,9 @@ animation: typewriterFloat 3s ease-in-out infinite;
   flex-direction:column;
   gap:8px;
   transition:transform .15s;
+  width: min(100%, 420px);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .card:hover{
@@ -764,6 +795,19 @@ animation: typewriterFloat 3s ease-in-out infinite;
 
     body {
         overflow-x: hidden;
+    }
+
+    .home-screen {
+        min-height: 0;
+    }
+
+    .home-hero {
+        flex: 0 0 auto;
+        min-height: 0;
+    }
+
+    .lameeze-microphones {
+        height: auto;
     }
 
     /* MAKE EVERYTHING SMALLER */
@@ -944,23 +988,24 @@ animation: typewriterFloat 3s ease-in-out infinite;
     /* CAROUSEL */
 
     .carousel {
-        width: 90%;
-        margin: 50px auto;
+        width: 900px;
+        max-width: 90%;
+        margin: 100px auto;
     }
 
     .carousel-window {
-        width: 75%;
+        width: 750px;
     }
 
     .carousel-track img {
-        width: 80px;
-        height: 120px;
+        width: 200px;
+        height: 300px;
     }
 
     .carousel-btn {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
+        width: 45px;
+        height: 45px;
+        font-size: 30px;
     }
 
 

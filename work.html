@@ -23,7 +23,7 @@ body {
 }
     </style>
 </head>
-<body>
+<body class="work-page">
 <header>
 
     <div class="nav-box">
@@ -122,18 +122,28 @@ body {
 
 </div>
 
-<div class="music-button">
+<section class="projects" id="projects">
+  <h2>Web Projects</h2>
 
+  <div class="cards work-projects">
+    <a class="card" href="https://delightfulcakess.netlify.app" target="_blank" rel="noopener">
+      <h3>Delightful Cakes</h3>
+      <p>A bakery website with a menu, bright photography and a simple ordering flow.</p>
+      <span class="go">Visit the site</span>
+    </a>
+  </div>
+
+  <div class="music-button">
     <img src="images/cd2-Photoroom.png" 
          alt="Music player"
          onclick="toggleMusic()"
          id="music-image">
+  </div>
 
-    <audio id="music">
-        <source src="music/PinkPantheress - Girl Like Me (Instrumental).mp3" type="audio/mpeg">
-    </audio>
-
-</div>
+  <audio id="music">
+      <source src="music/PinkPantheress - Girl Like Me (Instrumental).mp3" type="audio/mpeg">
+  </audio>
+</section>
 
 <!-- Footer -->
 <div class="footer">

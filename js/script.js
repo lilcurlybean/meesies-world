@@ -6,27 +6,29 @@ function togglePaper() {
 
 }
 
-let currentSlide = 0;
+const carouselSlides = new Map();
 
-function moveSlide(direction) {
+function moveSlide(direction, carouselSelector = ".carousel") {
+    const carousel = document.querySelector(carouselSelector);
+    const track = carousel?.querySelector("[class^='carousel-track']");
+    const window = carousel?.querySelector("[class^='carousel-window']");
+    const firstImage = track?.querySelector("img");
 
-    const track = document.querySelector(".carousel-track");
-    const images = document.querySelectorAll(".carousel-track img");
-
-    const imageWidth = 230 + 20;
-
-    currentSlide += direction;
-
-    if (currentSlide < 0) {
-        currentSlide = 3;
+    if (!track || !window || !firstImage) {
+        return;
     }
 
-    if (currentSlide > 3) {
-        currentSlide = 0;
-    }
+    const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+    const imageWidth = firstImage.getBoundingClientRect().width + gap;
+    const maxOffset = Math.max(0, track.scrollWidth - window.clientWidth);
+    const maxSlide = Math.ceil(maxOffset / imageWidth);
+    let currentSlide = carouselSlides.get(carouselSelector) || 0;
+
+    currentSlide = (currentSlide + direction + maxSlide + 1) % (maxSlide + 1);
+    carouselSlides.set(carouselSelector, currentSlide);
 
     track.style.transform =
-        "translateX(-" + (currentSlide * imageWidth) + "px)";
+        "translateX(-" + Math.min(currentSlide * imageWidth, maxOffset) + "px)";
 }
 
 const music = document.getElementById("music");
@@ -52,4 +54,3 @@ function toggleMusic() {
 
 }
     
-

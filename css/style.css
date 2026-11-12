@@ -71,28 +71,90 @@ box-sizing: border-box;
 
 }
 
-.welcome-heading {
-    text-align: center;
-    font-family: Bremlin, sans-serif;
-    font-size: 30px;
-    color: #c34c66;
-    margin-top: 100px;
-    margin-bottom: 100px;
+.home-page {
+    margin: 0;
 }
 
+.home-screen {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
+.home-screen > header {
+    flex: 0 0 auto;
+}
+
+.home-screen .nav-box {
+    width: calc(100% - 40px);
+}
+
+.home-hero {
+    display: flex;
+    flex: 1 1 auto;
+    min-height: 150px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    overflow: hidden;
+    border: 3px solid #D66F86;
+    border-radius: 24px;
+    background: #F8DDE3;
+    box-shadow: 0 8px 0 rgba(214, 111, 134, 0.2);
+    box-sizing: border-box;
+    
+
+}
+
+.lameeze-microphones {
+    display: block;
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.home-content {
+    display: flow-root;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 34px auto 0;
+  width: min(90%, 900px);
+}
+
+.tags li {
+  background: #F8DDE3;
+  color: #D66F86;
+  font-family: Bremlin, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border: 2px solid #D66F86;
+  border-radius: 16px;
+  box-shadow: 0 4px 0 rgba(214, 111, 134, 0.25);
+}
+
+.tags li:nth-child(odd){transform:rotate(-2deg)}
+.tags li:nth-child(even){transform:rotate(2deg)}
 
 
-
-.meesMatchaDate {
+.meesieTape {
     position: relative;
     display: block;
-    width: 300px;
+    width: 350px;
     height: auto;
     margin: 20px auto;
     left: -50px;
     top: 0;
     border-radius: 20px;
-   
+    transform: rotate(-8deg);
+    transform-origin: center;
 }
 .matcha-container {
     display: flex;
@@ -105,13 +167,16 @@ box-sizing: border-box;
     font-size: 25px;
     color: #D66F86;
 top: 100px;
-   
+   border: 2px solid #D66F86;
+  border-radius: 16px;
+  box-shadow: 0 4px 0 rgba(216, 97, 123, 0.753);
+  background-color: #F8DDE3;
 }
 .gtk-btn {
     position: relative;
     right: -600px;
-    margin-top: -10000px;
-    margin-bottom: 500px;
+    margin-top: -1000px;
+    margin-bottom: 200px;
     margin-left: 80px;
     width: 350px;
     transform: translateY(25px);
@@ -123,40 +188,39 @@ top: 100px;
     height: auto;
     margin: 20px auto;
     left: -300px;
-    top: -40px;
+    top: -1px;
+}
 
-      animation: phoneRing 2s ease-in-out infinite;
+.home-page .telephone {
+    top: 300px;
+    animation: phoneRing 2s ease-in-out infinite;
 }
 
 @keyframes phoneRing {
-    0%, 70%, 100% {
-        transform: rotate(0deg);
+    0%, 70%, 100%, 88% {
+        transform: rotate(20deg);
     }
 
     72% {
-        transform: rotate(-8deg);
+        transform: rotate(28deg);
     }
 
     76% {
-        transform: rotate(8deg);
+        transform: rotate(12deg);
     }
 
     80% {
-        transform: rotate(-8deg);
+        transform: rotate(28deg);
     }
 
     84% {
-        transform: rotate(8deg);
-    }
-
-    88% {
-        transform: rotate(0deg);
+        transform: rotate(12deg);
     }
 }
 
 .Hello-pic {
     width: 500px;
-    margin-top: -400px;
+    margin-top: -1000px;
     left: -3000px;
 
 animation: typewriterFloat 3s ease-in-out infinite;
@@ -171,6 +235,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -50px;
 }
 
 @keyframes typewriterFloat {
@@ -456,6 +521,55 @@ animation: typewriterFloat 3s ease-in-out infinite;
 
     cursor: pointer;
 }
+/* Second Carousel */
+.carousel2 {
+    width: 900px;
+    max-width: 90%;
+    margin: 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-window2 {
+    width: 750px;
+    overflow: hidden;
+}
+
+.carousel-track2 {
+    display: flex;
+    gap: 5px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track2 img {
+    width: 200px;
+    height: 300px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+    padding: 0;
+    display: block;   
+}
+
+.carousel-btn2 {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #F8DDE3;
+    color: #D66F86;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
 
 #music-image {
     width: 200px;
@@ -503,18 +617,39 @@ animation: typewriterFloat 3s ease-in-out infinite;
     margin-top: 150px;
 }
 
-.contact h2 {
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.contact-box {
+    background: #F8DDE3;
+    border: 2px solid #D66F86;
+    border-radius: 20px;
+    padding: 20px 30px;
+    min-width: 240px;
+    width: min(320px, 100%);
+    box-shadow: 0 6px 0 rgba(214, 111, 134, 0.2);
+}
+
+.contact-box h2 {
     font-family: Bremlin, sans-serif;
     font-size: 28px;
     color: #D66F86;
     text-align: center;
+    margin: 0 0 10px;
 }
 
-.contact p {
+.contact-box p {
     font-family: Bremlin, sans-serif;
     font-size: 20px;
     color: #8B5E68;
     text-align: center;
+    margin: 0;
 }
 .socials {
     text-align: center;
@@ -556,13 +691,74 @@ animation: typewriterFloat 3s ease-in-out infinite;
 .social-button:hover {
     transform: scale(1.05);
 }
+:root{
+  --blush:#f9dce1;
+   --berry:#b83a62;
+    --ink:#5a1f33;
+    --pink:#D66F86;
+}
 
+.projects{
+  max-width:1100px;
+  margin:0 auto;
+  padding:20px 20px 90px;
+}
+
+.projects h2{
+        font-family: Bremlin, sans-serif;
+  font-size:clamp(1.9rem,4vw,2.8rem);
+  margin:0 0 8px;
+  color:var(--pink);
+}
+
+/* the grid of boxes */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));  /* 3 across on desktop, fewer on small screens */
+  gap:26px;
+  margin-top:28px;
+}
+
+/* each box */
+.card{
+  background:var(--blush);
+  border-radius:24px;
+  padding:26px;
+  text-decoration:none;
+  color:var(--ink);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  transition:transform .15s;
+}
+
+.card:hover{
+  transform:rotate(-1.2deg) translateY(-4px);   /* little tilt and lift */
+}
+
+.card h3{
+    font-family: Bremlin, sans-serif;
+  margin:0;
+  font-size:1.4rem;
+  color:var(--pink);
+}
+
+.card p{margin:0}
+
+.card .go{
+  margin-top:auto;          /* pushes the link text to the bottom of every box */
+  padding-top:10px;
+  font-weight:700;
+  color:var(--berry);
+  font-family: Bremlin, sans-serif;
+}
 
 .banner {
     width: 100%;
     height: 400px;
     margin-bottom: -90px;
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -572,8 +768,8 @@ animation: typewriterFloat 3s ease-in-out infinite;
 
     /* MAKE EVERYTHING SMALLER */
     .nav-box {
-        width: 85%;
-        height: 55px;
+        width: 90%;
+        height: 60px;
         padding: 3px 8px;
         margin: 12px auto;
     }
@@ -905,7 +1101,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
         justify-content: center;
         gap: 8px;
         width: calc(100% - 32px);
-        margin: 12px auto 0;
+        margin: 42px auto 0;
     }
 
     .home-page .hello-phone-row .Hello-pic {
@@ -924,7 +1120,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
     .home-page .telephone-container {
         flex: 0 0 auto;
         order: -1;
-        transform: translateY(-45px);
+        transform: translateY(0);
     }
 
     .home-page .telephone {
@@ -1056,7 +1252,7 @@ animation: typewriterFloat 3s ease-in-out infinite;
     }
 
     .home-page .telephone-container {
-        transform: translateY(-24px);
+        transform: translateY(0);
     }
 
     .home-page .hello-phone-row .Hello-pic {

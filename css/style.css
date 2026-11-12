@@ -285,36 +285,11 @@ animation: typewriterFloat 3s ease-in-out infinite;
     height: auto;
     top: 0%;
     left: -300px;
+    transform: translateX(-10px) rotate(-10deg);
+
    
 }
-.swirl-arrow {
-    position: absolute;
-    display: block;
-    width: 300px;
-    height: auto;
 
-    top: 300px;
-    left: 500px;
-
-    transform: translateX(150px) rotate(150deg);
-    z-index: 9999;
-
-   animation: floatArrow 2s ease-in-out infinite;
-}
-/* Animation for the arrow floating effect */
-@keyframes floatArrow {
-    0% {
-        transform: rotate(150deg) translateY(0);
-    }
-
-    50% {
-        transform: rotate(150deg) translateY(-15px);
-    }
-
-    100% {
-        transform: rotate(150deg) translateY(0);
-    }
-}
 
 /* Typewriter and Paper */
 .typewriter-container {
@@ -395,13 +370,12 @@ animation: typewriterFloat 3s ease-in-out infinite;
 }
 
 .my-project-title {
-    position: relative;
-    display: block;
-    margin: 30px auto;
-    max-width: 40%;
-    height: auto;
-    top: 0%;
-    left: -300px;
+     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #D66F86;
+    margin-top: -710px;
+    margin-bottom: 500px;
+    margin-left: 950px;
 }
 
 .pink-phone {
@@ -1337,4 +1311,195 @@ animation: typewriterFloat 3s ease-in-out infinite;
     .about-page .pink-file {
         margin-top: -30px;
     }
+}
+
+.about-page .about-showcase {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.8fr) minmax(0, 1.4fr);
+    align-items: center;
+    gap: 30px;
+    width: min(1100px, calc(100% - 40px));
+    margin: 30px auto;
+}
+
+.about-page .about-showcase > .polaroid-curly {
+    position: static;
+    width: min(100%, 300px);
+    max-width: none;
+    margin: 0 auto;
+}
+
+.about-page .about-showcase > .card {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+}
+
+.about-page .about-feature-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: min(900px, calc(100% - 40px));
+    margin: 30px auto;
+}
+
+.about-page .about-feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 20px;
+    border: 2px solid #D66F86;
+    border-radius: 20px;
+    background-color: #fffaf5;
+    box-shadow: 0 6px 0 rgba(214, 111, 134, 0.2);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.about-page .about-feature-card:first-child {
+    transform: rotate(-3deg);
+}
+
+.about-page .about-feature-card:last-child {
+    transform: rotate(3deg);
+}
+
+.about-page .about-feature-card:hover {
+    transform: translateY(-6px) rotate(0) scale(1.03);
+    box-shadow: 0 10px 0 rgba(214, 111, 134, 0.25);
+}
+
+.about-page .about-feature-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.about-page .about-feature-card .pink-file,
+.about-page .about-feature-card .pink-phone {
+    position: static;
+    display: block;
+    width: min(100%, 260px);
+    max-width: 100%;
+    height: 260px;
+    object-fit: contain;
+    margin: 0 auto;
+    transform: none;
+}
+
+.about-page .about-feature-card .my-project-title,
+.about-page .about-feature-card .beep {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #D66F86;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .about-page .about-showcase {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: calc(100% - 24px);
+    }
+
+    .about-page .about-showcase > .polaroid-curly {
+        width: min(50vw, 190px);
+    }
+
+    .about-page .about-feature-boxes {
+        gap: 12px;
+        width: calc(100% - 24px);
+    }
+
+    .about-page .about-feature-card {
+        padding: 12px 8px;
+    }
+}
+.about-page .about-moreinfo {
+    box-sizing: border-box;
+    font-family: Bremlin, sans-serif;
+    width: min(680px, calc(100% - 40px));
+    max-width: none;
+    min-width: 0;
+    margin: 0 auto 30px;
+}
+
+.about-moreinfo ul {
+    margin: 0;
+    padding-left: 1.25em;
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+:root{
+--cream:#f7efe3;
+  --grid:#d9ccbb;
+  --pink-light:#f9dce1;
+  --pink-border:#f3c6d0;
+  --rose:#c94f6d;
+  --berry:#8a2f4a;
+  --button:#a8374f;
+  --text:#4a3a3a;
+  --display:'Bremlin', sans-serif;
+  --body:'Bremlin', sans-serif;
+}
+
+.card{
+    flex:1;
+    min-width:300px;
+    max-width:620px;
+    background:#fffaf5;
+    border:2px solid var(--pink-border);
+    border-radius:24px;
+    padding:36px;
+    display:flex;
+    flex-direction:column;
+    gap:20px
+}
+.hook{
+    margin:0;
+    font-family:var(--display);
+    font-size:24px;
+    line-height:1.35;
+    color:var(--berry)}
+.card p{
+    margin:0;
+    font-size:17px;
+    line-height:1.6;
+    color:var(--text)
+}
+ 
+.pills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    padding:0;
+    margin:0;
+    list-style:none
+}
+.pills li{
+    background:var(--pink-light);
+    color:var(--berry);
+    border-radius:999px;
+    padding:8px 18px;
+    font-size:15px;
+    font-weight:500
+}
+ 
+
+
+ 
+@media (max-width:600px){
+  .nav{padding:16px 20px}
+  .nav ul{gap:20px;font-size:16px}
+  .card{padding:24px}
 }
